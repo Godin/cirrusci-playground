@@ -1,0 +1,14 @@
+task:
+  windows_container:
+    image: cirrusci/windowsservercore:2016
+  script: echo OK
+
+task:
+  osx_instance:
+    image: high-sierra-xcode-9.4.1
+  script: ps -A
+
+task:
+  container:
+    image: gcc:latest
+  script: echo OK
